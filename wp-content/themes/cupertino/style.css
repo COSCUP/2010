@@ -1,0 +1,535 @@
+/*   
+Theme Name:Cupertino
+Theme URI:http://coscup.org/
+Description:Cupertino Theme designed for COSCUP 2010.
+Author:Evadne, Medical-Wei, Timdream.
+Author URI:
+Version:0
+*/
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+.alpha { margin-left: 0; }
+.omega { margin-right: 0; }
+.clear { clear: both; }
+.dirtyClear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.sprite-header-title { background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -110px no-repeat; }
+.sprite-sidebar-date { background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -57px no-repeat; }
+.sprite-mainmenu-notactivated-first { background: transparent url('./ui/assets/coscup.asset.sprite.png') -2px 0 no-repeat; }
+.sprite-mainmenu-notactivated { background: transparent url('./ui/assets/coscup.asset.sprite.png') -164px 0 no-repeat; }
+.sprite-mainmenu-notactivated-last { background: transparent url('./ui/assets/coscup.asset.sprite.png') -320px 0 no-repeat; }
+.sprite-mainmenu-activated-first { background: transparent url('./ui/assets/coscup.asset.sprite.png') -482px 0 no-repeat; }
+.sprite-mainmenu-activated { background: transparent url('./ui/assets/coscup.asset.sprite.png') -644px 0 no-repeat; }
+.sprite-mainmenu-activated-last { background: transparent url('./ui/assets/coscup.asset.sprite.png') -800px 0 no-repeat; }
+body { margin: 0; }
+body #header .inner {
+  margin: 0 auto;
+  width: 960px;
+  height: 208px;
+}
+body #header .inner #langMenu {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  height: 33px;
+  width: 940px;
+}
+body #header .inner h1 {
+  margin: 0;
+  clear: both;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  height: 125px;
+}
+body #header .inner #mainMenu {
+  clear: both;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  height: 55px;
+}
+body #content { clear: both; }
+body #content .inner {
+  margin: 0 auto;
+  width: 960px;
+}
+body #content .inner #article {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+body #content .inner #aside {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+body #footer { clear: both; }
+body #footer .inner {
+  margin: 0 auto;
+  width: 960px;
+  height: 100px;
+  padding-top: 20px;
+}
+body #footer .inner .slogan {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+  height: 100px;
+}
+body #footer .inner .widget {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  height: 100px;
+}
+body {
+  color: #3d3f40;
+  background: #e4e8eb;
+}
+body #header { background: url("./ui/assets/coscup.asset.header.bg.png") bottom repeat-x; }
+body #header .inner h1 { background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -110px no-repeat; }
+body #header .inner h1 a {
+  display: block;
+  height: 125px;
+  text-indent: -1000em;
+}
+body #header .inner #tagline { display: none; }
+body #footer { background: url("./ui/assets/coscup.asset.footer.bg.png") repeat-x #abaeb0; }
+.serif { font-family: "Hoefler Text", Baskerville, "Big Caslon", "Adobe Garamond Pro", Georgia, Palatino, "Times New Roman", "Apple LiSung Light", "LiSung Pro", "AR PL UMing TW", "新細明體", serif; }
+.sans-pmingliu { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+.sans { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '微軟正黑體', '新細明體', FreeSans, sans-serif; }
+body { font-size: 13px/1.5; }
+body #header { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+body #footer { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+body #content { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '微軟正黑體', '新細明體', FreeSans, sans-serif; }
+body #content #article {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+body #content #aside {
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif;
+  font-size: 0.85em;
+}
+.serif { font-family: "Hoefler Text", Baskerville, "Big Caslon", "Adobe Garamond Pro", Georgia, Palatino, "Times New Roman", "Apple LiSung Light", "LiSung Pro", "AR PL UMing TW", "新細明體", serif; }
+.sans-pmingliu { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+.sans { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '微軟正黑體', '新細明體', FreeSans, sans-serif; }
+body { font-size: 13px/1.5; }
+body #header { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+body #footer { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif; }
+body #content { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '微軟正黑體', '新細明體', FreeSans, sans-serif; }
+body #content #article {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+body #content #aside {
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif;
+  font-size: 0.85em;
+}
+.withDownwardsArrow:before {
+  content: "";
+  font-family: "Wingdings";
+}
+.sprite-header-title { background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -110px no-repeat; }
+.sprite-sidebar-date { background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -57px no-repeat; }
+.sprite-mainmenu-notactivated-first { background: transparent url('./ui/assets/coscup.asset.sprite.png') -2px 0 no-repeat; }
+.sprite-mainmenu-notactivated { background: transparent url('./ui/assets/coscup.asset.sprite.png') -164px 0 no-repeat; }
+.sprite-mainmenu-notactivated-last { background: transparent url('./ui/assets/coscup.asset.sprite.png') -320px 0 no-repeat; }
+.sprite-mainmenu-activated-first { background: transparent url('./ui/assets/coscup.asset.sprite.png') -482px 0 no-repeat; }
+.sprite-mainmenu-activated { background: transparent url('./ui/assets/coscup.asset.sprite.png') -644px 0 no-repeat; }
+.sprite-mainmenu-activated-last { background: transparent url('./ui/assets/coscup.asset.sprite.png') -800px 0 no-repeat; }
+#mainMenu ul {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+}
+#mainMenu ul li {
+  list-style: none;
+  float: left;
+  width: 154px;
+  height: 55px;
+  background: transparent url('./ui/assets/coscup.asset.sprite.png') -164px 0 no-repeat;
+}
+#mainMenu ul li a {
+  display: block;
+  text-align: center;
+  line-height: 33px;
+  margin: 6px 1px 13px;
+  padding: 1px 0 2px;
+  color: #132730;
+  text-shadow: rgba(255, 255, 255, 0.7) 0 1px 1px;
+  text-decoration: none;
+}
+#mainMenu ul li.current_page_item { background: transparent url('./ui/assets/coscup.asset.sprite.png') -644px 0 no-repeat; }
+#mainMenu ul li.current_page_item a {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
+}
+#mainMenu ul li.current_page_ancestor { background: transparent url('./ui/assets/coscup.asset.sprite.png') -644px 0 no-repeat; }
+#mainMenu ul li.current_page_ancestor a {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
+}
+#mainMenu ul li:first-child {
+  width: 160px;
+  background: transparent url('./ui/assets/coscup.asset.sprite.png') -2px 0 no-repeat;
+}
+#mainMenu ul li:first-child a { margin: 6px 1px 13px 7px; }
+#mainMenu ul li:first-child.current_page_item { background: transparent url('./ui/assets/coscup.asset.sprite.png') -482px 0 no-repeat; }
+#mainMenu ul li:first-child.current_page_ancestor { background: transparent url('./ui/assets/coscup.asset.sprite.png') -482px 0 no-repeat; }
+#mainMenu ul li:last-child {
+  width: 160px;
+  background: transparent url('./ui/assets/coscup.asset.sprite.png') -320px 0 no-repeat;
+}
+#mainMenu ul li:last-child a { margin: 6px 7px 13px 1px; }
+#mainMenu ul li:last-child.current_page_item { background: transparent url('./ui/assets/coscup.asset.sprite.png') -800px 0 no-repeat; }
+#mainMenu ul li:last-child.current_page_ancestor { background: transparent url('./ui/assets/coscup.asset.sprite.png') -800px 0 no-repeat; }
+#langMenu ul {
+  margin: 0;
+  padding: 0;
+  line-height: 33px;
+  text-align: right;
+}
+#langMenu ul li {
+  list-style: none;
+  display: inline;
+}
+#langMenu ul li a {
+  color: #132730;
+  text-decoration: none;
+}
+body.zh-tw #langMenu li.zh-tw { display: none; }
+body.en #langMenu li.en { display: none; }
+#article h1 { font-weight: 300; }
+#article h2 { font-weight: 300; }
+#article h3 { font-weight: 700; }
+#article h4 { font-weight: 700; }
+#article h5 { font-weight: 700; }
+#article h6 { font-weight: 700; }
+#article h7 { font-weight: 700; }
+#article h1 {
+  font-size: 2.8em;
+  line-height: 1.3em;
+  margin: 40px 0 20px;
+  color: #3a6483;
+}
+#article .impressive {
+  font-size: 2.8em;
+  line-height: 1.3em;
+  margin: 40px 0 20px;
+  color: #3a6483;
+}
+#article h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#article * + h2 { margin-top: 60px; }
+#article a {
+  text-decoration: none;
+  color: #3d3f40;
+  border-bottom: 1px solid #b1b5b7;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#article a:hover {
+  border-bottom: 1px solid #3d3f40;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+#footer a {
+  text-decoration: none;
+  color: #3d3f40;
+  border-bottom: 1px solid #b1b5b7;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#footer a:hover {
+  border-bottom: 1px solid #3d3f40;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+a img { border: none; }
+#article .alignleft {
+  float: left;
+  margin-right: 20px;
+}
+#article .alignright {
+  float: right;
+  margin-left: 20px;
+}
+#aside div.datebadge {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#aside div.datebadge p {
+  margin: 0;
+  padding: 0;
+}
+#aside div.datebadge .date {
+  height: 51px;
+  background: transparent url('./ui/assets/coscup.asset.sprite.png') 0 -57px no-repeat;
+  text-indent: -1000em;
+}
+#aside div.datebadge .place {
+  padding-left: 15px;
+  line-height: 1.3em;
+  margin-top: 10px;
+  color: #2d4a59;
+  text-shadow: #ffffff 0 1px 0;
+}
+#aside div.widget h3 {
+  color: #89a3b0;
+  text-shadow: rgba(255, 255, 255, 0.3) 0 1px 0;
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+#aside div.widget .textwidget {
+  background: url("./ui/assets/coscup.asset.sidebar.blockheader.png") top repeat-x #f2f2f2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 9px 0 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid #ccd7df;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+}
+#aside div.widget .textwidget .blogroll {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+#aside div.widget .textwidget .blogroll li {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #f5f5f5;
+  overflow: hidden;
+}
+#aside div.widget .textwidget .blogroll li a img {
+  -webkit-box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ffffff;
+  -moz-box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ffffff;
+  -o-box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ffffff;
+  box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ffffff;
+  background-color: #ffffff;
+}
+#aside div.widget .textwidget .blogroll li:first-child { border-top: none; }
+#aside div.widget a.bigButton {
+  display: block;
+  width: 10em;
+  color: #3d3f40;
+  padding: 5px;
+  margin: 5px auto;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #bec1c3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#aside div.widget a.bigButton:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  background: #fdfdfd;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+body #content #article .bubble:before {
+  display: block;
+  background: url("./ui/assets/coscup.asset.bubble.pointer.png") no-repeat;
+  height: 11px;
+  content: " ";
+  margin-top: -11px;
+  margin-left: 36px;
+}
+body #content #article .bubble {
+  margin: 20px 0 10px;
+  border: 2px solid #bec1c3;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  color: #55626e;
+  text-shadow: rgba(255, 255, 255, 0.3) 0 1px 0;
+  padding: 0 10px;
+}
+body #content #article .bubble p { margin: 10px 0; }
+body #content #article .bubble a {
+  color: #55626e;
+  border-bottom: 1px solid #b9bfc5;
+}
+body #content #article .bubble a:hover { border-bottom: 1px solid #55626e; }
+body #content #article a.bigButton {
+  display: block;
+  width: 20em;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  color: #55626e;
+  border: 2px solid #bec1c3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+}
+body #content #article a.bigButton:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+  background: #ecf0f3;
+}
+#footer {
+  color: #5f6162;
+  font-size: 0.9em;
+}
+#footer h1 {
+  font-size: 1.2em;
+  color: #3d3f40;
+}
+#footer h2 {
+  font-size: 1.2em;
+  color: #3d3f40;
+}
+#footer h3 {
+  font-size: 1em;
+  color: #3d3f40;
+  margin: 1.2em 0;
+}
+#footer h4 {
+  font-size: 1em;
+  color: #3d3f40;
+  margin: 1.2em 0;
+}
+#footer h5 {
+  font-size: 1em;
+  color: #3d3f40;
+  margin: 1.2em 0;
+}
+#footer h6 {
+  font-size: 1em;
+  color: #3d3f40;
+  margin: 1.2em 0;
+}
+#footer h7 {
+  font-size: 1em;
+  color: #3d3f40;
+  margin: 1.2em 0;
+}
+#footer a {
+  border-bottom: 1px solid #abaeb0;
+  color: #5f6162;
+}
+#footer a:hover { border-bottom: 1px solid #5f6162; }
+#footer ul { padding: 0; }
+#footer ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 0.5em 0 0;
+  white-space: nowrap;
+}
+#article blockquote {
+  margin: 1em;
+  font-style: italic;
+}
+#article blockquote p { margin: 0; }
+#article blockquote p.quoting {
+  margin: 0;
+  font-family: "Hoefler Text", Baskerville, "Big Caslon", "Adobe Garamond Pro", Georgia, Palatino, "Times New Roman", "Apple LiSung Light", "LiSung Pro", "AR PL UMing TW", "新細明體", serif;
+}
+#article blockquote p.quoting:before {
+  display: block;
+  content: "“";
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  padding-right: 1em;
+  text-align: right;
+}
+#article blockquote p.quoting:after { content: "”"; }
+#article blockquote p.zh { font-style: normal; }
+#article blockquote cite {
+  display: block;
+  text-align: right;
+  font-size: 0.6em;
+  font-weight: 700;
+  font-style: normal;
+  color: #55626e;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', 'Apple LiGothic', 'LiHei Pro', '文泉驛微米黑', 'Droid Sans Fallback', '新細明體', FreeSans, sans-serif;
+}
+#article blockquote cite:before { content: " — "; }
+#article blockquote.block {
+  float: left;
+  width: 220px;
+  margin: 27px;
+  padding: 25px;
+  border-top: 2px solid #bec1c3;
+  border-bottom: 2px solid #bec1c3;
+  min-height: 9em;
+}
+body.zh-tw #article blockquote p.zh:before { content: "「"; }
+body.zh-tw #article blockquote p.zh:after { content: "」"; }
